@@ -8,5 +8,5 @@ width=${resolution%x*}
 # elimina el prefijo con el parametro dado # (en este caso la x y todo lo anterior)
 height=${resolution#*x}
 
-wmctrl -r :ACTIVE: -b add,0,maximized_horz
-wmctrl -r :ACTIVE: -e 0,0,$height,$width,$((height / 2))
+wmctrl -r :ACTIVE: -b add,maximized_horz
+wmctrl -r :ACTIVE: -e 0,0,$height,0,$((height / 2))

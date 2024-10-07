@@ -9,4 +9,4 @@ width=${resolution%x*}
 height=${resolution#*x}
 
 wmctrl -r :ACTIVE: -b add,0,maximized_horz
-wmctrl -r :ACTIVE: -e 0,0,0,$width,$((height / 2))
+wmctrl -r :ACTIVE: -e 0,0,0,0,$((height / 2))
