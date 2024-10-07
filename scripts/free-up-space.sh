@@ -29,5 +29,7 @@ if [ -z "$1" ]; then
    trash
    log
 else
-   $1
+   for ((i = 0; i <= $#; i++)); do
+      ${!i}
+   done
 fi
